@@ -1,0 +1,27 @@
+/* diceStyles.css */
+.dice {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.rolling {
+    animation: shake 0.8s ease-in-out;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(15deg);
+    }
+    50% {
+        transform: rotate(-15deg);
+    }
+    75% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
