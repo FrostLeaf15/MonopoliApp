@@ -201,11 +201,27 @@ export default function Index({ players }) {
                                 </button>
                                 <button
                                     onClick={() =>
+                                        handleBalanceChange(player.id, 10000)
+                                    }
+                                    className="bg-green-500 text-white px-2 py-1 rounded"
+                                >
+                                    +10.000
+                                </button>
+                                <button
+                                    onClick={() =>
                                         handleBalanceChange(player.id, 20000)
                                     }
                                     className="bg-green-500 text-white px-2 py-1 rounded"
                                 >
                                     +20.000
+                                </button>
+                                <button
+                                    onClick={() =>
+                                        handleBalanceChange(player.id, -20000)
+                                    }
+                                    className="bg-red-500 text-white px-2 py-1 rounded"
+                                >
+                                    -20.000
                                 </button>
                                 <button
                                     onClick={() =>
